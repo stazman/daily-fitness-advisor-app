@@ -1,3 +1,6 @@
 {
-  "projects": {}
+  "projects": {
+    "daily-weight-loss-advisor-backend": "git@github.com:stazman/daily-weight-loss-advisor-backend.git",
+    "daily-weight-loss-advisor-frontend": "git@github.com:stazman/daily-weight-loss-advisor-frontend.git"
+  }
 }
