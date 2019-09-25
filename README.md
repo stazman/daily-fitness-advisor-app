@@ -1,15 +1,30 @@
-This project has a React front-end and a Rails backend, each with its own repo. The two repos have been wrapped in a meta repo.
-To install meta and clone the meta repo, run npm i -g meta && meta git clone git@github.com:stazman/daily-weight-loss-advisor-app.git. Further info about the meta app can be found here: https://github.com/mateodelnorte/meta.
+Daily Weight Loss Advisor
 
-It has been set up to use Webpack dev server to proxy requests to the Rails API server (http://localhost:3001) as a proxy server to avoid CORS issues.
+This app is currently set up only for development. It doesn't currently have user accounts functionality.
+
+The app includes two separate repos, daily-weight-loss-advisor-backend (Rails) and daily-weight-loss-advisor-frontend (React/Redux), each with its own repo, packaged in a meta file. 
+
+To install meta and clone the entire meta repo, which will also clone the frontend and backend repos, run ```npm i -g meta && meta git clone git@github.com:stazman/daily-weight-loss-advisor-app.git```. 
+
+Further info about the meta app: https://github.com/mateodelnorte/meta.
+
+Here are the links to the two repos if you wish to clone them individually:
+
+Backend: https://github.com/stazman/daily-weight-loss-advisor-backend
+Frontend: https://github.com/stazman/daily-weight-loss-advisor-frontend
+
+Note: If the repos are being cloned individually, they must be siblings in the same directory for the two servers to be started, as the app is currently configured through the Foreman gem.
+
+The app has been set up to use Webpack dev server to proxy requests to the Rails API server (http://localhost:3001) as a proxy server to avoid CORS issues.
 
 If you already have Ruby, Bundler, Rails, Node.js and NPM installed, follow these steps to run the app:
 
-Fork and clone this repo. cd to the directory from the terminal. In the terminal:
+1. Fork and clone this meta repo/the two repos individually.
+2. cd into the daily-weight-loss-advisor-backend directory from your terminal. 
+3. Run ```bundle install`` to install all required gems
+4. Run ```bundle exec db:migrate db:seed``` to migrate and seed the database
+5. Run ```rake start``` to start the web server and Rails api server
 
-run bundle install to install all required gems
-run bundle exec db:migrate db:seed to migrate and seed the database
-run rake start to start the web server and Rails api server
 NOTE: The following sections will be completed and may be altered as the project continues in development:
 
 To install Ruby:
@@ -53,8 +68,7 @@ Available Scripts
 In the project directory, you can run:
 
 rake start
-Runs the app in the development mode, with .
-Open http://localhost:3000 to view it in the browser.
+Starts both the web server (http://localhost:3000) and api server (http://localhost:3001) simultaneously.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console. -->
