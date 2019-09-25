@@ -1,5 +1,5 @@
-daily-weight-loss-advisor-rails
-This project has a React front-end and a Rails backend.
+This project has a React front-end and a Rails backend, each with its own repo. The two repos have been wrapped in a meta repo.
+To install meta and clone the meta repo, run npm i -g meta && meta git clone git@github.com:stazman/daily-weight-loss-advisor-app.git. Further info about the meta app can be found here: https://github.com/mateodelnorte/meta.
 
 It has been set up to use Webpack dev server to proxy requests to the Rails API server (http://localhost:3001) as a proxy server to avoid CORS issues.
 
