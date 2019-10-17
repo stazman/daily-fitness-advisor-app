@@ -13,7 +13,9 @@ Here are the links to the two repos if you wish to clone them individually:
 Backend: https://github.com/stazman/daily-weight-loss-advisor-backend
 Frontend: https://github.com/stazman/daily-weight-loss-advisor-frontend
 
-Note: If the repos are being cloned individually, they must be siblings in the same directory for the two servers to be started, as the app is currently configured through the Foreman gem.
+Notes: 
+  1. Currently, the Rails API (backend) server cannot be opened on its own as both the web server (frontend) and Rails API servers are bundled to open together through a Foreman gem procfile and rake task. Foreman gem repo: https://github.com/ddollar/foreman.
+  2. If the repos are being cloned individually, they must be siblings in the same directory for the two servers to be started, as the app is currently configured through the Foreman gem.
 
 The app has been set up to use Webpack dev server to proxy requests to the Rails API server (http://localhost:3001) as a proxy server to avoid CORS issues.
 
@@ -26,6 +28,8 @@ If you already have Ruby, Bundler, Rails, Node.js and NPM installed, follow thes
 5. Run ```rake start``` to start the web server and Rails api server
 
 NOTE: The following sections will be completed and may be altered as the project continues in development:
+
+RAILS BACKEND:
 
 To install Ruby:
 
@@ -58,9 +62,8 @@ Services (job queues, cache servers, search engines, etc.)
 
 Deployment instructions
 
-More Rails information:
 
-More React information:
+REACT/REDUX FRONTEND:
 
 This project was bootstrapped with Create React App.
 
