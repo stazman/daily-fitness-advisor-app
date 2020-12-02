@@ -1,17 +1,17 @@
-## Daily Weight Loss Advisor
+## Daily Fitness Advisor
 
 This app is currently set up only for development. It doesn't currently have user accounts functionality.
 
-The app includes two separate repos, daily-weight-loss-advisor-backend (Rails) and daily-weight-loss-advisor-frontend (React/Redux), each with its own repo, packaged in a **meta** file. 
+The app includes two separate repos, daily-fitness-advisor-backend (Rails) and daily-weight-loss-advisor-frontend (React/Redux), each with its own repo, packaged in a **meta** file. 
 
-To install **meta** and clone the entire **meta** repo, which will also clone the frontend and backend repos, run ```npm i -g meta && meta git clone git@github.com:stazman/daily-weight-loss-advisor-app.git```. 
+To install **meta** and clone the entire **meta** repo, which will also clone the frontend and backend repos, run ```npm i -g meta && meta git clone git@github.com:stazman/daily-fitness-advisor-app.git```. 
 
 Further info about the **meta** app: https://github.com/mateodelnorte/meta
 
 Here are the links to the backend and frontend repos if you wish to clone them individually:
 
-Backend: https://github.com/stazman/daily-weight-loss-advisor-backend
-Frontend: https://github.com/stazman/daily-weight-loss-advisor-frontend
+Backend: https://github.com/stazman/daily-fitness-advisor-backend
+Frontend: https://github.com/stazman/daily-fitness-advisor-frontend
 
 **Notes about cloning both repos individually:** 
   1. Currently, the Rails API (backend) server cannot be opened on its own as both the web server (frontend) and Rails API servers are bundled to open together through a **Foreman** gem procfile and rake task. **Foreman** gem repo: https://github.com/ddollar/foreman.
@@ -22,7 +22,7 @@ This app has been set up to use Webpack Dev Server to proxy requests to the Rail
 If you already have Ruby, Bundler, Rails, Node.js and NPM installed, follow these steps to run the app:
 
 1. Fork and clone this **meta** repo/the two repos individually.
-2. cd into the daily-weight-loss-advisor-backend directory from your terminal. 
+2. cd into the daily-fitness-advisor-backend directory from your terminal. 
 3. Run ```bundle install``` to install all required gems
 4. Run ```bundle exec db:migrate db:seed``` to migrate and seed the database
 5. Run ```rake start``` to start the web server and Rails API server
