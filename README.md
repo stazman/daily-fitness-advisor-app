@@ -1,7 +1,5 @@
 ## Daily Fitness Advisor
 
-This app is currently set up only for development. It doesn't currently have user accounts functionality.
-
 The app includes two separate repos, daily-fitness-advisor-backend (Rails) and daily-weight-loss-advisor-frontend (React/Redux), each with its own repo, packaged in a **meta** file. 
 
 To install **meta** and clone the entire **meta** repo, which will also clone the frontend and backend repos, run ```npm i -g meta && meta git clone git@github.com:stazman/daily-fitness-advisor-app.git```. 
